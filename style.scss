@@ -3,6 +3,7 @@
 $Moderatecyan: hsl(176, 50%, 47%);
 $Darkcyan: hsl(176, 72%, 28%);
 $Black: hsl(0, 0%, 0%);
+$Lightgray: #f3f4f4;
 $Darkgray: hsl(0, 0%, 48%);
 $background: #fafafa;
 
@@ -59,16 +60,30 @@ body{
 
 .project-title__title{
     font-weight: 700;
-    margin: 50px 0px;
+    margin: 40px 0px;
     font-size: 28px;
 }
 
-.project-title__decription{
-    font-weight: 700;
-    margin: 50px 0px;
-    font-size: 28px;
-    color: $background;
+.project-title__description{
+    font-weight: 400;
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: $Darkgray;
 }
+
+.project-title__logo{
+    width: 60px;
+    height: auto;
+    margin-top: -60px
+}
+
+.project-title__btns{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+
 .btns__back-btn{
     width: 210px;
     height: 60px;
@@ -77,10 +92,27 @@ body{
     color:white;    
     border: none;
     font-weight: 500;
+    font-size: 18px;
 }
 .btns__bookmark-btn{
-    background-color: #fff;
-    
+    display: flex;
+    align-items: center;
+    background-color: $Lightgray;
+    border-radius: 30px;
+    width: 180px;
+    height: 56px;
+    border: none;
+    font-size:18px;
+    color: $Darkgray;    
+    position: relative;
+}
+.btns__bookmark-btn img{
+    position: absolute;
+    left: 0;
+}
+.btns__bookmark-btn p{
+    margin-left: 60px;
+    font-weight: 600;
 }
 
 

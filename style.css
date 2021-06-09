@@ -133,15 +133,34 @@ body {
 
 .project-title__title {
   font-weight: 700;
-  margin: 50px 0px;
+  margin: 40px 0px;
   font-size: 28px;
 }
 
-.project-title__decription {
-  font-weight: 700;
-  margin: 50px 0px;
-  font-size: 28px;
-  color: #fafafa;
+.project-title__description {
+  font-weight: 400;
+  margin-bottom: 50px;
+  font-size: 18px;
+  color: #7a7a7a;
+}
+
+.project-title__logo {
+  width: 60px;
+  height: auto;
+  margin-top: -60px;
+}
+
+.project-title__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .btns__back-btn {
@@ -152,10 +171,34 @@ body {
   color: white;
   border: none;
   font-weight: 500;
+  font-size: 18px;
 }
 
 .btns__bookmark-btn {
-  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f3f4f4;
+  border-radius: 30px;
+  width: 180px;
+  height: 56px;
+  border: none;
+  font-size: 18px;
+  color: #7a7a7a;
+  position: relative;
+}
+
+.btns__bookmark-btn img {
+  position: absolute;
+  left: 0;
+}
+
+.btns__bookmark-btn p {
+  margin-left: 60px;
+  font-weight: 600;
 }
 
 .project-data {
