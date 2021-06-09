@@ -189,3 +189,82 @@ body{
     position: absolute;
     left:0;
 }
+
+.project-about__title{
+    font-size: 24px;
+    width: 100%;
+    text-align: left;
+    margin: 20px 0px;
+    font-weight: 700;
+}
+
+.project-about__content{
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+    margin: 20px 0px;
+    color: $Darkgray;
+    line-height: 28px;
+}
+
+.project-about__product-panel{
+    border: $Darkgray 1px solid;
+    border-radius: 10px;
+    margin: 20px 0px;
+    padding: 30px 30px;
+}
+.product-panel__title-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.product-panel__title{
+    font-size: 20px;
+    font-weight: 700;
+}
+.product-panel__sub-title{
+    color: $Moderatecyan;
+}
+
+.produc-panel__description{
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+    margin: 20px 0px;
+    color: $Darkgray;
+    line-height: 28px;
+}
+
+.product-panel__left-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.product-panel__left-row p{
+    display: flex;
+    align-items: center;
+    counter-reset: $Darkgray;
+}
+
+.product-panel__left-row span{
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.product-panel__select-reward{
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: $Moderatecyan;
+    color:white;    
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+}
