@@ -1,0 +1,108 @@
+@import 'reset';
+
+$Moderatecyan: hsl(176, 50%, 47%);
+$Darkcyan: hsl(176, 72%, 28%);
+$Black: hsl(0, 0%, 0%);
+$Darkgray: hsl(0, 0%, 48%);
+$background: #fafafa;
+
+header{
+    background-image: url(./images/image-hero-desktop.jpg);
+    height:400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    font-family: 'Commissioner', sans-serif;
+}
+
+.header-container{
+    width: 70%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-contaier__nav{
+    display: flex;
+}
+
+.nav__item{
+    margin: 0px 20px;
+    color: white;
+}
+
+.main-container{
+    width:  100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+    background-color:$background;
+}
+
+.project-title{
+    width: 50%;
+    display:flex;
+    border-radius: 20px;
+    background-color:white;
+    flex-direction: column;
+    align-items: center;
+    height: 260px;
+    padding: 30px 50px;
+    margin-top: -100px;
+    margin-bottom: 25px;
+}
+
+.project-title__title{
+    font-weight: 700;
+    margin: 50px 0px;
+    font-size: 28px;
+}
+
+.project-title__decription{
+    font-weight: 700;
+    margin: 50px 0px;
+    font-size: 28px;
+    color: $background;
+}
+.btns__back-btn{
+    width: 210px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: $Moderatecyan;
+    color:white;    
+    border: none;
+    font-weight: 500;
+}
+.btns__bookmark-btn{
+    background-color: #fff;
+    
+}
+
+
+.project-data{
+    width: 50%;
+    display:flex;
+    border-radius: 20px;
+    background-color:white;
+    flex-direction: column;
+    align-items: center;
+    height: 260px;
+    padding: 30px 50px;
+    margin-bottom: 25px;
+}
+
+.project-about{
+    width: 50%;
+    display:flex;
+    border-radius: 20px;
+    background-color:white;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px;
+    margin-bottom: 25px;
+}
