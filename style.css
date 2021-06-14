@@ -64,6 +64,14 @@ header {
           justify-content: center;
 }
 
+a {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: 'Commissioner', sans-serif;
 }
@@ -82,7 +90,7 @@ body {
           align-items: center;
 }
 
-.header-contaier__nav {
+.header-contaier__nav--desktop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,7 +133,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 260px;
   padding: 30px 50px;
   margin-top: -100px;
   margin-bottom: 25px;
@@ -172,6 +179,10 @@ body {
   border: none;
   font-weight: 500;
   font-size: 18px;
+}
+
+.btns__back-btn:hover {
+  background-color: #147b74;
 }
 
 .btns__bookmark-btn {
@@ -331,7 +342,8 @@ body {
 }
 
 .project-about__product-panel {
-  border: #7a7a7a 1px solid;
+  width: 100%;
+  border: #C0C0C0 1px solid;
   border-radius: 10px;
   margin: 20px 0px;
   padding: 30px 30px;
@@ -360,7 +372,7 @@ body {
   color: #3cb4ac;
 }
 
-.produc-panel__description {
+.product-panel__description {
   font-size: 16px;
   width: 100%;
   text-align: left;
@@ -408,5 +420,162 @@ body {
   border: none;
   font-weight: 500;
   font-size: 16px;
+}
+
+.product-panel__select-reward:hover {
+  background-color: #147b74;
+}
+
+.bookmark-btn__logo--mobile {
+  display: none;
+}
+
+.mobile-nav-icon--hamburger {
+  display: none;
+}
+
+.mobile-nav-icon--hamburger:hover {
+  cursor: pointer;
+}
+
+.mobile-nav-icon--close {
+  display: none;
+}
+
+.mobile-nav-icon--close:hover {
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav--display {
+  display: none;
+}
+
+@media (max-width: 719px) {
+  header {
+    background-image: url("./images/image-hero-mobile.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .project-title {
+    width: 65%;
+    text-align: center;
+    margin-top: -160px;
+  }
+  .btns__bookmark-btn {
+    display: none;
+  }
+  .bookmark-btn__logo--mobile {
+    display: block;
+  }
+  .project-title__btns {
+    margin-bottom: 20px;
+  }
+  .header-contaier__nav--desktop {
+    display: none;
+  }
+  .mobile-nav-icon--hamburger {
+    cursor: pointer;
+    display: block;
+  }
+  .mobile-nav-icon--hamburger-close {
+    display: none;
+  }
+  .mobile-nav-icon--close {
+    display: none;
+    cursor: pointer;
+  }
+  .mobile-nav-icon--close-open {
+    display: block;
+    cursor: pointer;
+  }
+  .project-data-figure {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .project-data-figure__item {
+    margin: 20px 0;
+  }
+  .project-data-figure__item--mid {
+    border-left: none;
+    border-right: none;
+  }
+  .project-data-figure__item--mid:before {
+    content: "";
+    background-color: darkgray;
+    width: 25%;
+    height: 1px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .project-data-figure__item--mid:after {
+    content: "";
+    background-color: darkgray;
+    width: 25%;
+    height: 1px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .project-data {
+    width: 65%;
+  }
+  .project-about {
+    width: 65%;
+  }
+  .project-about__title {
+    width: 120%;
+  }
+  .project-about__content {
+    width: 120%;
+  }
+  .header-container {
+    width: 90%;
+  }
+  .product-panel__title-row {
+    text-align: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .product-panel__title-row p {
+    margin-top: 20px;
+  }
+  .product-panel__left-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .product-panel__left-row button {
+    margin-top: 20px;
+  }
+  .mobile-nav--display {
+    position: absolute;
+    display: block;
+    background-color: white;
+    width: 90%;
+    top: 60px;
+    left: 100;
+    border-radius: 10px;
+  }
+  .nav__item--mobile {
+    margin: 25px 20px;
+  }
+  .nav__item--mobile-mid {
+    margin: 25px 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

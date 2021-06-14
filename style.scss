@@ -4,6 +4,7 @@ $Moderatecyan: hsl(176, 50%, 47%);
 $Darkcyan: hsl(176, 72%, 28%);
 $Black: hsl(0, 0%, 0%);
 $Lightgray: #f3f4f4;
+$Medgray: #C0C0C0;
 $Darkgray: hsl(0, 0%, 48%);
 $background: #fafafa;
 
@@ -13,6 +14,14 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+a{
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
 }
 
 body{
@@ -27,13 +36,13 @@ body{
     align-items: center;
 }
 
-.header-contaier__nav{
+.header-contaier__nav--desktop{
     display: flex;
 }
 
 .nav__item{
     margin: 0px 20px;
-    color: white;
+    color: white;    
 }
 
 .main-container{
@@ -52,7 +61,6 @@ body{
     background-color:white;
     flex-direction: column;
     align-items: center;
-    height: 260px;
     padding: 30px 50px;
     margin-top: -100px;
     margin-bottom: 25px;
@@ -93,7 +101,11 @@ body{
     border: none;
     font-weight: 500;
     font-size: 18px;
+    &:hover{
+        background-color: $Darkcyan;
+    }
 }
+
 .btns__bookmark-btn{
     display: flex;
     align-items: center;
@@ -208,7 +220,8 @@ body{
 }
 
 .project-about__product-panel{
-    border: $Darkgray 1px solid;
+    width: 100%;
+    border: $Medgray 1px solid;
     border-radius: 10px;
     margin: 20px 0px;
     padding: 30px 30px;
@@ -229,7 +242,7 @@ body{
     color: $Moderatecyan;
 }
 
-.produc-panel__description{
+.product-panel__description{
     font-size: 16px;
     width: 100%;
     text-align: left;
@@ -267,4 +280,147 @@ body{
     border: none;
     font-weight: 500;
     font-size: 16px;
+    &:hover{
+        background-color: $Darkcyan;
+    }
+}
+
+.bookmark-btn__logo--mobile{
+    display: none;
+}
+
+.mobile-nav-icon--hamburger{
+    display: none;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.mobile-nav-icon--close{
+    display: none;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.mobile-nav{
+    display: none;
+}
+
+.mobile-nav--display{
+    display: none;
+}
+
+@media (max-width:719px) {
+    header{
+        background-image: url("./images/image-hero-mobile.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .project-title{
+        width: 65%;
+        text-align: center;
+        margin-top: -160px;
+    }        
+    .btns__bookmark-btn{
+        display:none;
+    }
+    .bookmark-btn__logo--mobile{
+        display: block;        
+    }
+    .project-title__btns{
+        margin-bottom: 20px;
+    }
+    .header-contaier__nav--desktop{
+        display: none;
+    }
+    .mobile-nav-icon--hamburger{
+        cursor: pointer;
+        display: block;       
+        &-close{
+            display:none;
+        }     
+    }
+    .mobile-nav-icon--close{        
+        display: none;
+        cursor: pointer;
+        &-open{
+            display:block;
+            cursor: pointer;
+        }     
+    }
+
+    .project-data-figure{
+        flex-direction: column;
+        text-align: center;
+    }
+    .project-data-figure__item{
+        margin: 20px 0;
+    }
+    .project-data-figure__item--mid{
+        border-left: none;
+        border-right: none;
+        &:before{
+            content: "";
+            background-color: darkgray;
+            width: 25%;
+            height: 1px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        &:after{
+            content: "";
+            background-color: darkgray;
+            width: 25%;
+            height: 1px;
+            margin: auto;
+            margin-top: 20px;
+        }
+    }
+    .project-data{
+        width:65%;
+    }
+    .project-about{
+        width: 65%;        
+    }
+    .project-about__title{
+        width: 120%;            
+    }
+    .project-about__content{
+        width: 120%;
+    }
+    .header-container{
+        width:90%;
+    }
+    .product-panel__title-row{
+        text-align: left;
+        flex-direction: column;
+        align-items:flex-start;
+        p{
+            margin-top: 20px;
+        }
+    }
+    .product-panel__left-row{
+        flex-direction: column;
+        align-items: flex-start;
+        button{
+            margin-top: 20px;
+        }
+    }
+
+    .mobile-nav--display{
+        position: absolute;
+        display: block;
+        background-color: white;
+        width: 90%;
+        top: 60px;
+        left: 100;
+        border-radius: 10px;
+    }
+    .nav__item--mobile{
+        margin: 25px 20px;
+    }
+    .nav__item--mobile-mid{
+        margin: 25px 20px;        
+    }
 }

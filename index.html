@@ -6,6 +6,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
   
   <title>Frontend Mentor | Crowdfunding product page</title>
 
@@ -19,16 +20,27 @@
   <header>
     <div class="header-container">
       <div class="header__logo-container">
-        <img class="logo-container__logo" src="images/logo.svg">
+        <a href="">
+          <img class="logo-container__logo" src="images/logo.svg">
+        </a>
       </div>
-      <nav>
-        <ul class="header-contaier__nav">
-          <li class="nav__item">About</li>
-          <li class="nav__item">Discover</li>
-          <li class="nav__item">Get Started</li>
+      <nav class="desktop-nav">
+        <ul class="header-contaier__nav--desktop">
+          <li class="nav__item"><a>About</a></li>
+          <li class="nav__item"><a>Discover</a></li>
+          <li class="nav__item"><a>Get Started</a></li>
         </ul>
       </nav>
+      <img class="mobile-nav-icon--hamburger" src="images/icon-hamburger.svg">
+      <img class="mobile-nav-icon--close" src="images/icon-close-menu.svg">
     </div>
+    <nav class="mobile-nav">
+      <ul class="header-contaier__nav--mobile">
+        <li class="nav__item--mobile"><a>About</a></li>
+        <li class="nav__item--mobile-mid"><a>Discover</a></li>
+        <li class="nav__item--mobile"><a>Get Started</a></li>
+      </ul>
+    </nav>
   </header>
   <div class="main-container">
     <section class="project-title">
@@ -37,6 +49,7 @@
       <p class="project-title__description">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
       <div class="project-title__btns">
           <button class="btns__back-btn">Back this project</button>
+          <img class="bookmark-btn__logo--mobile" src="./images/icon-bookmark.svg">
           <button class="btns__bookmark-btn">
             <img class="bookmark-btn__logo" src="./images/icon-bookmark.svg">
             <p>Bookmark</p>  
@@ -78,9 +91,8 @@
           <h3 class="product-panel__title">Bamboo Stand</h3>
           <p class="product-panel__sub-title">Pledge $25 or more</p>
         </div>
-        <div class="produc-panel__description">
-          <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
-  you’ll be added to a special Backer member list.</p>
+        <div class="product-panel__description">
+          <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
         </div>
         <div class="product-panel__left-row">
           <p><span>101</span>left</p>
@@ -92,29 +104,27 @@
           <h3 class="product-panel__title">Black Edition Stand</h3>
           <p class="product-panel__sub-title">Pledge $75 or more</p>
         </div>
-        <div class="produc-panel__description">
-          <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
-  member list. Shipping is included.</p>
+        <div class="product-panel__description">
+          <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
         </div>
         <div class="product-panel__left-row">
           <p><span>64</span>left</p>
           <button class="product-panel__select-reward">Select Reward</button>
         </div>
       </div>
-        <div class="project-about__product-panel">
-          <div class="product-panel__title-row">
-            <h3 class="product-panel__title">Mahogany Special Edition</h3>
-            <p>Pledge $200 or more</p>
-          </div>
-          <div class="produc-panel__description">
-            You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
-  to our Backer member list. Shipping is included.
-          </div>
-          <div class="product-panel__left-row">
-            <p><span>0</span>left</p>
-            <button class="product-panel__select-reward">Out of Stock</button>
-          </div>
+      <div class="project-about__product-panel">
+        <div class="product-panel__title-row">
+          <h3 class="product-panel__title">Mahogany Special Edition</h3>
+          <p class="product-panel__sub-title">Pledge $200 or more</p>          
         </div>
+        <div class="product-panel__description">
+          You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.
+        </div>
+        <div class="product-panel__left-row">
+          <p><span>0</span>left</p>
+          <button class="product-panel__select-reward">Out of Stock</button>
+        </div>
+      </div>
       
     </section>
   </div>
